@@ -9,7 +9,9 @@ André Tritiack de Farias
 ## Integrantes do Grupo
 
 Nome: Bruno Riquelme Coutinho Pereira - RM: 569619
+
 Nome: Eduardo Bigoli Portela - RM: 569897
+
 Nome: Lucas Lino Marques da Silva - RM: 572863
 
 ## Tema
