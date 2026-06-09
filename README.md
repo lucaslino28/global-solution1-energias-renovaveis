@@ -124,12 +124,6 @@ space-energy-monitor/
 
 Também é possível executar utilizando a extensão Live Server no Visual Studio Code.
 
-## Integrantes
-
-- Lucas Lino Marques da Silva
-- Bruno R. C. Pereira
-- Eduardo B. Portela
-
 ## Observação
 
 Este projeto utiliza dados simulados com finalidade acadêmica. A proposta é demonstrar como conceitos de energia, potência, energias renováveis, sustentabilidade e tomada de decisão podem ser aplicados em uma solução computacional voltada ao contexto de uma missão espacial experimental.
