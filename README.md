@@ -14,40 +14,41 @@ Nome: Eduardo Bigoli Portela - RM: 569897
 
 Nome: Lucas Lino Marques da Silva - RM: 572863
 
-## Tema
+## Sobre o projeto
 
-Sistema inteligente de monitoramento energético para uma missão espacial experimental sustentável.
+O Space Energy Monitor é um dashboard web criado para simular o monitoramento energético de uma missão espacial experimental sustentável.
+
+A ideia do projeto é acompanhar dados simulados da missão, como geração de energia solar, consumo total, carga da bateria, temperatura dos módulos, comunicação e status operacional.
+
+Com esses dados, o sistema gera alertas automáticos, sugere decisões básicas e calcula um índice de sustentabilidade da missão.
 
 ## Objetivo
 
-O objetivo do projeto é simular o monitoramento de sistemas energéticos de uma missão espacial experimental, analisando dados operacionais relacionados à geração de energia solar, consumo dos módulos, carga da bateria, temperatura, comunicação e status dos sistemas.
+Desenvolver uma solução simples e funcional para monitorar os sistemas energéticos de uma missão espacial, aplicando conceitos de:
 
-A solução utiliza dados simulados para gerar alertas automáticos e decisões básicas diante de situações críticas, contribuindo para a segurança, eficiência energética e sustentabilidade da missão.
-
-## Descrição da Solução
-
-O Space Energy Monitor é um dashboard web que simula uma missão espacial alimentada principalmente por energia solar, com apoio de baterias para armazenamento energético.
-
-O sistema monitora módulos operacionais da missão, interpreta os dados gerados e classifica a situação da operação em diferentes modos, como operação normal, atenção, economia ou emergência.
-
-Além disso, a solução apresenta alertas inteligentes, decisões automáticas e um índice de sustentabilidade calculado com base na geração solar, consumo total, bateria e quantidade de módulos em operação normal.
+- energia solar;
+- consumo energético;
+- bateria;
+- temperatura;
+- comunicação;
+- sustentabilidade;
+- tomada de decisão automatizada.
 
 ## Funcionalidades
 
-- Simulação de dados operacionais da missão.
-- Monitoramento da geração de energia solar.
-- Monitoramento do consumo total dos módulos.
-- Monitoramento da carga da bateria.
-- Monitoramento de temperatura, energia, comunicação e status dos módulos.
-- Classificação automática dos módulos em Normal, Atenção ou Crítico.
-- Indicação visual por cores para cada status.
-- Geração automática de alertas inteligentes.
-- Sugestão de decisões automáticas diante de situações críticas.
-- Cálculo do Índice de Sustentabilidade da Missão.
-- Botão para simular novas leituras operacionais.
-- Interface em formato de dashboard responsivo.
+- Simulação de dados da missão.
+- Exibição da geração solar em kW.
+- Exibição do consumo total em kW.
+- Monitoramento da bateria em porcentagem.
+- Monitoramento dos módulos da missão.
+- Classificação dos módulos em Normal, Atenção ou Crítico.
+- Cores diferentes para facilitar a identificação dos status.
+- Geração automática de alertas.
+- Sugestão de decisões automáticas.
+- Cálculo do índice de sustentabilidade.
+- Botão para simular uma nova leitura dos dados.
 
-## Módulos Monitorados
+## Módulos monitorados
 
 O sistema simula o monitoramento dos seguintes módulos:
 
@@ -57,56 +58,59 @@ O sistema simula o monitoramento dos seguintes módulos:
 - Controle Térmico;
 - Suporte à Vida.
 
-## Regras de Status dos Módulos
+Cada módulo possui dados de temperatura, disponibilidade energética, comunicação e status.
 
-Cada módulo é classificado de acordo com temperatura, energia disponível e comunicação.
+## Regras utilizadas
 
-- Normal: quando os indicadores estão dentro dos parâmetros adequados.
-- Atenção: quando há algum indicador próximo de uma condição crítica.
-- Crítico: quando há temperatura elevada, baixa energia ou comunicação instável.
+O sistema classifica os módulos com base em regras simples:
 
-## Regras de Alertas
+- Crítico: temperatura acima de 80 °C, disponibilidade energética abaixo de 20% ou comunicação abaixo de 50%.
+- Atenção: temperatura acima de 65 °C, disponibilidade energética abaixo de 40% ou comunicação abaixo de 70%.
+- Normal: quando os dados estão dentro dos limites definidos.
 
-O sistema gera alertas automaticamente em situações como:
+Essas regras também são usadas para gerar alertas e decisões automáticas.
 
-- Geração solar abaixo do consumo total;
-- Bateria em nível crítico;
-- Temperatura crítica em algum módulo;
-- Baixa disponibilidade de energia;
-- Comunicação instável.
+## Alertas e decisões
 
-## Decisões Automáticas
+Quando o sistema identifica uma situação de risco, ele exibe alertas como:
 
-Com base nos alertas identificados, o sistema sugere decisões como:
+- energia solar abaixo do consumo total;
+- bateria em nível crítico;
+- temperatura crítica em algum módulo;
+- baixa disponibilidade energética;
+- comunicação instável.
 
-- Ativar modo economia de energia;
-- Priorizar energia para suporte à vida, comunicação e controle térmico;
-- Redirecionar energia solar para recarga das baterias;
-- Acionar resfriamento emergencial;
-- Tentar reconexão automática com a base terrestre;
-- Reduzir consumo operacional de módulos em risco.
+Com base nesses alertas, o sistema sugere decisões como:
 
-## Índice de Sustentabilidade
+- ativar modo economia;
+- priorizar energia para módulos essenciais;
+- redirecionar energia solar para as baterias;
+- acionar resfriamento emergencial;
+- tentar reconexão com a base terrestre.
 
-O Índice de Sustentabilidade da Missão é calculado considerando:
+## Índice de sustentabilidade
 
-- Geração solar em relação ao consumo total;
-- Nível de bateria;
-- Quantidade de módulos em status Normal.
+O índice de sustentabilidade é calculado com base em três fatores:
+
+- geração solar em relação ao consumo total;
+- nível da bateria;
+- quantidade de módulos em operação normal.
 
 A classificação pode ser:
 
-- Operação sustentável: índice igual ou superior a 80%;
-- Operação moderada: índice entre 50% e 79%;
-- Operação crítica: índice abaixo de 50%.
+- Operação sustentável;
+- Operação moderada;
+- Operação crítica.
 
-## Tecnologias Utilizadas
+Esse índice foi criado para resumir de forma simples a condição energética da missão.
+
+## Tecnologias utilizadas
 
 - HTML5;
 - CSS3;
 - JavaScript.
 
-## Estrutura do Projeto
+## Estrutura do projeto
 
 space-energy-monitor/
 ├── index.html
@@ -115,15 +119,15 @@ space-energy-monitor/
 ├── README.md
 └── entrega.txt
 
-## Como Executar
+## Como executar
 
 1. Baixe ou clone este repositório.
 2. Abra a pasta do projeto.
 3. Execute o arquivo index.html em um navegador.
 4. Clique no botão Simular nova leitura para gerar novos dados da missão.
 
-Também é possível executar utilizando a extensão Live Server no Visual Studio Code.
+Também é possível executar com a extensão Live Server no Visual Studio Code.
 
 ## Observação
 
-Este projeto utiliza dados simulados com finalidade acadêmica. A proposta é demonstrar como conceitos de energia, potência, energias renováveis, sustentabilidade e tomada de decisão podem ser aplicados em uma solução computacional voltada ao contexto de uma missão espacial experimental.
+Este projeto utiliza dados simulados para representar cenários de uma missão espacial experimental. A proposta foi desenvolvida com foco acadêmico, buscando aplicar conceitos de energia renovável, sustentabilidade e lógica de programação em uma solução simples e funcional.
