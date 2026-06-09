@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,8 @@
         <p>Global Solution 2026.1 • SERS</p>
         <h1>Space Energy Monitor</h1>
         <p>Sistema Inteligente de monitoramento energético para missões espaciais sustentáveis.</p>
+
+        <button onclick="simularNovaLeitura()">Simular nova leitura</button>
     </header>
 
     <main>
@@ -40,6 +42,38 @@
                 <h2>Modo da Missão</h2>
                 <p id="modoMissao">Normal</p>
                 <span>Classificação geral da operação</span>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Módulos Monitorados</h2>
+
+            <div id="listaModulos" class="lista-modulos">
+                <p>Os módulos da missão serão exibidos aqui.</p>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Alertas Inteligentes</h2>
+             
+            <div id="listaAlertas" class="lista-alertas">
+                <p>Os alertas da missão serão exibidos aqui.</p>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Decisões Automáticas</h2>
+
+            <div id="listaDecisoes" class="lista-decisoes">
+                <p>As decisões da missão serão exibidas aqui.</p>
+            </div>
+        </section>
+
+        <section class="painel">
+            <h2>Índice de Sustentabilidade</h2>
+
+            <div id="areaSustentabilidade" class="sustentabilidade">
+                <p>O índice de sustentabilidade da missão será exibido aqui.</p>
             </div>
         </section>
     </main>
