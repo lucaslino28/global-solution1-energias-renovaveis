@@ -135,15 +135,10 @@ button:hover {
     border-left-color: #ef4444;
 }
 
-.listas-alertas {
+.lista-alertas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
-}
-
-.alerta {
-    background-color: #0d1b2a;
-    padding: 14px;
 }
 
 .alerta {

@@ -69,7 +69,7 @@ function gerarDecisoes(geracaoSolar, consumoTotal, bateria, modulos) {
     let decisoes = [];
 
     if (bateria < 25) {
-        decisoes.push("Ativar modo economia de energia para preservar os sitemas essenciais.");
+        decisoes.push("Ativar modo economia de energia para preservar os sistemas essenciais.");
     }
 
     if (geracaoSolar < consumoTotal) {
@@ -266,5 +266,5 @@ function simularNovaLeitura() {
     `;
 }
 
-// Excuta uma simulação automaticamente quando a página abre
+// Executa uma simulação automaticamente quando a página abre
 simularNovaLeitura();
