@@ -187,8 +187,8 @@ function simularNovaLeitura() {
     ];
 
     // Exibindo os dados na tela
-    document.getElementById("geracaoSolar").textContent = geracaoSolar + " KW";
-    document.getElementById("consumoTotal").textContent = consumoTotal + " KW";
+    document.getElementById("geracaoSolar").textContent = geracaoSolar + " kW";
+    document.getElementById("consumoTotal").textContent = consumoTotal + " kW";
     document.getElementById("bateria").textContent = bateria + "%";
     document.getElementById("modoMissao").textContent = modoMissao;
 
