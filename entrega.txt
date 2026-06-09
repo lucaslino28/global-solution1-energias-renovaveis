@@ -7,9 +7,6 @@ Space Energy Monitor
 PROFESSOR:
 André Tritiack de Farias
 
-DESCRIÇÃO:
-Sistema inteligente de monitoramento energético para uma missão espacial experimental sustentável.
-
 INTEGRANTES:
 Bruno Riquelme Coutinho Pereira - RM: 569619
 Eduardo Bigoli Portela - RM: 569897
