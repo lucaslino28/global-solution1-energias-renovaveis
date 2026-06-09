@@ -153,9 +153,10 @@ function simularNovaLeitura() {
          nome: "Painéis Solares",
          funcao: "Captar energia renovável para alimentar a missão",
          temperatura: gerarNumeroAleatorio(25, 70),
-         energia: geracaoSolar,
+         energia: Math.round((geracaoSolar / 28) * 100),
          comunicacao: gerarNumeroAleatorio(80, 100)
         },
+
         {
          nome: "Baterias",
          funcao: "Armazenar energia para períodos de baixa geração solar",
@@ -163,6 +164,7 @@ function simularNovaLeitura() {
          energia: bateria,
          comunicacao: gerarNumeroAleatorio(75, 100)
         },
+
         {
          nome: "Comunicação",
          funcao: "Manter contato com a base terrestre",
@@ -170,6 +172,7 @@ function simularNovaLeitura() {
          energia: gerarNumeroAleatorio(20, 100),
          comunicacao: gerarNumeroAleatorio(35, 100)
         },
+
         {
          nome: "Controle Térmico",
          funcao: "Regular a temperatura dos equipamentos",
@@ -177,6 +180,7 @@ function simularNovaLeitura() {
          energia: gerarNumeroAleatorio(20, 100),
          comunicacao: gerarNumeroAleatorio(70, 100)
         },
+
         {
          nome: "Suporte à Vida",
          funcao: "Manter condições mínimas para a tripulação",
@@ -184,6 +188,7 @@ function simularNovaLeitura() {
          energia: gerarNumeroAleatorio(20, 100),
          comunicacao: gerarNumeroAleatorio(80, 100)
         }
+
     ];
 
     // Exibindo os dados na tela
