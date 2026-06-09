@@ -46,8 +46,8 @@ function gerarAlertas(geracaoSolar, consumoTotal, bateria, modulos) {
 
     modulos.forEach(function(modulo) {
         if (modulo.temperatura > 80) {
-        alertas.push("Temperatura crítica no módulo " + modulo.nome + ".");
-        } 
+            alertas.push("Temperatura crítica no módulo " + modulo.nome + ".");
+        }
 
         if (modulo.energia < 20) {
             alertas.push("Baixa disponibilidade de energia no módulo " + modulo.nome + ".");
@@ -83,7 +83,7 @@ function gerarDecisoes(geracaoSolar, consumoTotal, bateria, modulos) {
         }
 
         if (modulo.comunicacao < 50) {
-            decisoes.push("Tentar reconexão automática do módulo " + modulo.nome + " com base terrestre.");
+            decisoes.push("Tentar reconexão automática do módulo " + modulo.nome + " com a base terrestre.");
         }
 
         if (modulo.energia < 20) {
@@ -214,7 +214,7 @@ function simularNovaLeitura() {
             <h3>${modulo.nome}</h3>
             <p><strong>Função:</strong> ${modulo.funcao}</p>
             <p><strong>Temperatura:</strong> ${modulo.temperatura}°C</p>
-            <p><strong>Energia:</strong> ${modulo.energia}%</p>
+            <p><strong>Disponibilidade energética:</strong> ${modulo.energia}%</p>
             <p><strong>Comunicação:</strong> ${modulo.comunicacao}%</p>
             <p><strong>Status:</strong> ${status} </p>
           </div>
@@ -262,7 +262,7 @@ function simularNovaLeitura() {
         </div>
 
         <p><strong>Classificação:</strong> ${classificacaoSustentabilidade}</p>
-        <p><strong>Critérios:</strong> geração solar, consumo total, bateria e módulos em operação normal.</p>
+        <p><strong>Critérios:</strong> geração solar, consumo total, nível da bateria e módulos em operação normal.</p>
     `;
 }
 

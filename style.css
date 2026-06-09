@@ -15,6 +15,7 @@ body {
     background-attachment: fixed;
     color: white;
     font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
 
 header {
@@ -51,6 +52,7 @@ main {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    overflow-wrap: break-word;
 }
 
 .card h2 {
@@ -135,38 +137,30 @@ button:hover {
     border-left-color: #ef4444;
 }
 
-.lista-alertas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 12px;
-}
-
-.alerta {
-    background-color: #0d1b2a;
-    padding: 14px;
-    border-radius: 10px;
-    border-left: 6px solid #ef4444;
-    color: #c9d6e3;
-}
-
-.alerta strong {
-    color: white;
-}
-
+.lista-alertas,
 .lista-decisoes {
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
 }
 
+.alerta,
 .decisao {
     background-color: #0d1b2a;
     padding: 14px;
     border-radius: 10px;
-    border-left: 6px solid #38bdf8;
     color: #c9d6e3;
 }
 
+.alerta {
+    border-left: 6px solid #ef4444;
+}
+
+.decisao {
+    border-left: 6px solid #38bdf8;
+}
+
+.alerta strong,
 .decisao strong {
     color: white;
 }
@@ -204,11 +198,11 @@ button:hover {
 }
 
 @media (max-width: 900px) {
-    .resumo{
+    .resumo {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .lista-modulos{
+    .lista-modulos {
         grid-template-columns: 1fr;
     }
 
@@ -232,6 +226,10 @@ button:hover {
 
     .card p {
         font-size: 28px;
+    }
+
+    .painel {
+        padding: 18px;
     }
 
     button {
